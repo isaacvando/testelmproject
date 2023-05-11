@@ -1,0 +1,13 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Elm to GitHub Pages
+        uses: isaacvando/elmgithubpages@v0.1.1
